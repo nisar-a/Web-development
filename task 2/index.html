@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-bg">
+            <h1>ShopEase</h1>
+            <nav>
+                <a href="#carousel">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#featured-products">Featured Products</a>
+                <a href="#best-sellers">Best Sellers</a>
+                <a href="#offers">Special Offers</a>
+                <a href="#new-arrivals">New Arrivals</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    
+    <div id="main-content">
+        <section id="carousel" class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="i1.jpeg" alt="Slide 1">
+                </div>
+            </div>
+            <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+        </section>
+
+        <section id="categories" class="categories">
+            <h2>Categories</h2>
+            <div class="category-list">
+                <div class="category-item">
+                    <img src="e1.jpeg" alt="Electronics">
+                    <h3>Electronics</h3>
+                </div>
+                <div class="category-item">
+                    <img src="c1.jpeg" alt="Clothing">
+                    <h3>Clothing</h3>
+                </div>
+                <div class="category-item">
+                    <img src="h1.jpeg" alt="Home Appliances">
+                    <h3>Home Appliances</h3>
+                </div>
+                <div class="category-item">
+                    <img src="b1.jpeg" alt="Books">
+                    <h3>Books</h3>
+                </div>
+                <div class="category-item">
+                    <img src="t1.jpeg" alt="Toys">
+                    <h3>Toys</h3>
+                </div>
+                <div class="category-item">
+                    <img src="s1.jpeg" alt="Sports">
+                    <h3>Sports</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured-products" class="products">
+            <h2>Featured Products</h2>
+            <div class="product-slider">
+                <div class="product-item">
+                    <img src="s2.jpeg" alt="Product 1">
+                    <h3>Sun-Glasses</h3>
+                    <p>$10.00</p>
+                    <button onclick="addToCart('Sun-Glasses', 10)">Add to Cart</button>
+                    <button onclick="buyNow('Sun-Glasses', 10)">Buy Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="sh1.jpeg" alt="Product 2">
+                    <h3>Shoes</h3>
+                    <p>$15.00</p>
+                    <button onclick="addToCart('Shoes', 15)">Add to Cart</button>
+                    <button onclick="buyNow('Shoes', 15)">Buy Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="t2.jpeg" alt="Product 3">
+                    <h3>TWS</h3>
+                    <p>$20.00</p>
+                    <button onclick="addToCart('TWS', 20)">Add to Cart</button>
+                    <button onclick="buyNow('TWS', 20)">Buy Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="sm.jpeg" alt="Product 4">
+                    <h3>SmartWatches</h3>
+                    <p>$25.00</p>
+                    <button onclick="addToCart('SmartWatches', 25)">Add to Cart</button>
+                    <button onclick="buyNow('SmartWatches', 25)">Buy Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="w1.jpeg" alt="Product 5">
+                    <h3>Wallet</h3>
+                    <p>$30.00</p>
+                    <button onclick="addToCart('Wallet', 30)">Add to Cart</button>
+                    <button onclick="buyNow('Wallet', 30)">Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="best-sellers" class="products">
+            <h2>Best Sellers</h2>
+            <div class="product-slider">
+                <div class="product-item">
+                    <img src="ca.jpeg" alt="Best Seller 1">
+                    <h3>Canon</h3>
+                    <p>$40.00</p>
+                    <button onclick="addToCart('Canon', 40)">Add to Cart</button>
+                    <button onclick="buyNow('Canon', 40)">Buy Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="m1.jpeg" alt="Best Seller 2">
+                    <h3>Monitor</h3>
+                    <p>$50.00</p>
+                    <button onclick="addToCart('Monitor', 50)">Add to Cart</button>
+                    <button onclick="buyNow('Monitor', 50)">Buy Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="pc.jpeg" alt="Best Seller 3">
+                    <h3>PC Console</h3>
+                    <p>$60.00</p>
+                    <button onclick="addToCart('PC Console', 60)">Add to Cart</button>
+                    <button onclick="buyNow('PC Console', 60)">Buy Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="fr.jpeg" alt="Best Seller 4">
+                    <h3>Refrigerator</h3>
+                    <p>$70.00</p>
+                    <button onclick="addToCart('Refrigerator', 70)">Add to Cart</button>
+                    <button onclick="buyNow('Refrigerator', 70)">Buy Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="ac.jpeg" alt="Best Seller 5">
+                    <h3>Air Conditioner</h3>
+                    <p>$80.00</p>
+                    <button onclick="addToCart('Air Conditioner', 80)">Add to Cart</button>
+                    <button onclick="buyNow('Air Conditioner', 80)">Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="offers" class="offers">
+            <h2>Special Offers</h2>
+            <div class="offer-list">
+                <div class="offer-item">
+                    <img src="e1.jpeg" alt="Offer 1">
+                    <h3>Offer 1</h3>
+                    <p>Save 20% on Electronics</p>
+                </div>
+                <div class="offer-item">
+                    <img src="l1.jpeg" alt="Offer 2">
+                    <h3>Offer 2</h3>
+                    <p>Save 30% on Laptops</p>
+                </div>
+                <div class="offer-item">
+                    <img src="ba.jpeg" alt="Offer 3">
+                    <h3>Offer 3</h3>
+                    <p>30% Off on College Bags</p>
+                </div>
+                <div class="offer-item">
+                    <img src="sh1.jpeg" alt="Offer 4">
+                    <h3>Offer 4</h3>
+                    <p>Up to 50% Off on Shoes</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="new-arrivals" class="products">
+            <h2>New Arrivals</h2>
+            <div class="product-slider">
+                <div class="product-item">
+                    <img src="c1.jpeg" alt="New Arrival 1">
+                    <h3>Clothes</h3>
+                    <p>$90.00</p>
+                    <button onclick="addToCart('Clothes', 90)">Add to Cart</button>
+                    <button onclick="buyNow('Clothes', 90)">Buy Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="l1.jpeg" alt="New Arrival 2">
+                    <h3>Laptops</h3>
+                    <p>$100.00</p>
+                    <button onclick="addToCart('Laptops', 100)">Add to Cart</button>
+                    <button onclick="buyNow('Laptops', 100)">Buy Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="sm.jpeg" alt="New Arrival 3">
+                    <h3>SmartPhones</h3>
+                    <p>$110.00</p>
+                    <button onclick="addToCart('SmartPhones', 110)">Add to Cart</button>
+                    <button onclick="buyNow('SmartPhones', 110)">Buy Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="fr.jpeg" alt="New Arrival 4">
+                    <h3>Refrigerator</h3>
+                    <p>$120.00</p>
+                    <button onclick="addToCart('Refrigerator', 120)">Add to Cart</button>
+                    <button onclick="buyNow('Refrigerator', 120)">Buy Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="ir.jpeg" alt="New Arrival 5">
+                    <h3>Iron-Boxes</h3>
+                    <p>$130.00</p>
+                    <button onclick="addToCart('Iron-Boxes', 130)">Add to Cart</button>
+                    <button onclick="buyNow('Iron-Boxes', 130)">Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 ShopEase. All rights reserved.</p>
+    </footer>
+</body>
+</html>
